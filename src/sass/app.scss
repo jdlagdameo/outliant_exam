@@ -1,3 +1,12 @@
-body{
-    background: green;
+/* make the customizations */
+// $theme-colors: (
+//     // "primary": #0000
+//     // "info": #ffff,
+//     // "danger": teal
+// );
+
+@import "~bootstrap/scss/bootstrap";
+
+.section{
+    min-height: 500px;
 }
