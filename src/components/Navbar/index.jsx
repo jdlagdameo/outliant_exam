@@ -1,15 +1,37 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types'
+/**
+ * 
+ * Components - Navbar 
+ * 
+ * @author: John Dave Lagdameo
+ * @since: 04/13/2023 
+ * 
+ * @internal revisions:
+ * + 
+ * + 
+ * +
+ */
+import { NavLink } from 'react-router-dom';
 
-const Navbar = props => {
+const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <div className="container-fluid">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+    <nav 
+      className="navbar sticky-top navbar-expand-lg navbar-light bg-white mt-3 mb-3">
+      <div className="container p-0 ">
+
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarToggler" 
+          aria-controls="navbarToggler" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <div 
+          className="collapse navbar-collapse" 
+          id="navbarToggler">
           <a className="navbar-brand" href="#"><b>Logo.</b></a>
           <ul className="navbar-nav m-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -43,7 +65,7 @@ const Navbar = props => {
 
           </ul>
           <button 
-            className="btn btn-outline-dark" 
+            className="btn btn-dark" 
             type="button">
               Call to Action
           </button>
@@ -53,6 +75,4 @@ const Navbar = props => {
   )
 }
 
-Navbar.propTypes = {}
-
-export default Navbar
+export default Navbar;

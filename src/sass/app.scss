@@ -1,12 +1,119 @@
-/* make the customizations */
-// $theme-colors: (
-//     // "primary": #0000
-//     // "info": #ffff,
-//     // "danger": teal
-// );
+
+/* override bootstrap */ 
+$btn-font-weight: "bold";
+
+/* Custom valirables  */
+$text-primary-color: #0000;
+$text-secondary-color: #636262; 
+
+$bg-theme-dark: #ECECEC;
+$bg-theme-light: #FFFFFF;
 
 @import "~bootstrap/scss/bootstrap";
 
 .section{
     min-height: 500px;
+}
+
+h1.section-landing-header{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h1.section-footer-header{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+    .section{
+        margin-top: 50px !important;
+        min-height: 300px;
+    }
+
+    #section-landing-others{
+        margin-top: 100px !important
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    h1.section-landing-header{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    h1.section-footer-header{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.navbar-brand{
+    // font-weight: bold;
+    font-size: 25px;
+}
+
+.bg-theme-light{
+    background: #FFFFFF;
+}
+
+.bg-theme-dark{
+    background: #ECECEC;
+}
+
+.image-theme-light{
+    background: #C4C4C4;
+}
+
+.image-theme-dark{
+    background: #9D9D9D;
+}
+
+footer{
+    background: #ECECEC;
+}
+
+#img-footer-container{
+    position: relative;
+
+    img{
+        position: absolute;
+        height: 400px;
+        top: -100px ;
+        width: 400px;
+    }
+}
+
+#img-landing-container{
+    position: relative;
+    width: 450px;
+
+    img.small-rt-img{
+        position: absolute;
+        height:150px; 
+        top: -50px;
+        right: 25px;
+    }
+}
+
+
+
+#table-product{
+    thead{
+        background: $bg-theme-dark;
+    }
+    tbody{
+        color: $text-secondary-color;
+    }
+}
+
+#form-product{
+    max-width: 500px;
+    margin: auto;
 }

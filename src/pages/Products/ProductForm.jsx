@@ -69,9 +69,8 @@ const ProductForm = ({ setSelectedProduct, selectedProduct, setReload  }) => {
                 setReload(true);
            
             }
-          })
+          });
 
-        
     }
       
     return (
@@ -82,16 +81,16 @@ const ProductForm = ({ setSelectedProduct, selectedProduct, setReload  }) => {
             validationSchema={validationSchema}>
             {({ isSubmitting, errors, touched }) => (
                 <Form autoComplete='off'>
-                    <div className='card'>
-                        <div className='card-body bg-light p-5'>
+                    <div id="form-product">
+                        <div className='bg-theme-dark p-5'>
 
                         <div className='text-center'>
                             <h4>Header Text</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adpiscing elit ut</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br /> adpiscing elit ut</p>
                         </div>
                         
                         {/* Name */}
-                        <div className='form-group'>
+                        <div className='form-group mt-3'>
                             <Field 
                                 name="name" 
                                 type="text" 
