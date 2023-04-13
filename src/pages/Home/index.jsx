@@ -76,7 +76,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className='col-lg-6 d-none d-lg-block d-xl-block d-flex justify-content-center'>
+          <div className='col-lg-6 d-none d-lg-block d-xl-block d-flex text-center'>
             <img src={imgLight} alt="img1" />
           </div>
 

@@ -28,8 +28,8 @@ function App() {
 
       <div className="container-fluid">  
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path='*' element={<RestrictionPage />} />
         </Routes>
