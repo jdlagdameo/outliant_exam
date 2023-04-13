@@ -32,7 +32,7 @@ const ProductForm = ({ setSelectedProduct, selectedProduct, setReload  }) => {
         const curProducts = localStorage.getItem('products');
         
         const text = `Are you sure you want to ${id ? "Save Changes" : "create new product"}?`;
-        const textSuccess = `Product successfully ${id ? "created" : "updated"}.`; 
+        const textSuccess = `Product successfully ${id ? "updated" : "created"}.`; 
 
         Swal.fire({
             title: "Product",
